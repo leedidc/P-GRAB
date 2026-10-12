@@ -1,0 +1,59 @@
+.tab-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(24, 24, 24);
+  margin-bottom: 10px;
+}
+
+.toggle-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* 도메인 리스트의 기본 마커 설정 */
+.toggle-item::before {
+  content: "\25B6"; /* 토글이 닫힌 상태의 마커 모양 */
+  display: inline-block;
+  margin-right: 20px; /* 화살표와 텍스트 사이의 간격 */
+}
+
+.toggle-item.toggle-closed {
+  /* content: "\25B6"; */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* 토글된 아이템의 마커 스타일을 변경합니다. */
+.toggle-item.toggle-open::before {
+  content: "\25BC"; /* 토글이 열린 상태의 마커 모양 */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.toggle-title {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.url {
+  margin-left: 10px;
+}
+
+.toggle-content {
+  font-size: 16px;
+  display: none;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.toggle-content:not([hidden]) {
+  display: block;
+}
+
+li {
+  margin-bottom: 10px;
+}

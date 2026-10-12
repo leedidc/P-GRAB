@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AdCheck-Free Domain Register</title>
+    <link rel="stylesheet" type="text/css" href="../css/domainRegister.css" />
+  </head>
+  <body>
+    <div class="tab-title">도메인 등록</div>
+    <div class="domain-register-part">
+      <input
+        type="text"
+        id="domainInput"
+        name="url"
+        placeholder="example.com"
+      />
+      <button id="storeDomainButton">등록하기</button>
+    </div>
+
+    <div class="privacy-part">
+      <div class="sub-title">도메인에 제공한 개인정보 목록</div>
+      <button id="registerPrivacyListButton">개인정보 등록</button>
+      <div class="privacy-item-list">
+        <!-- 1등급 개인정보 -->
+        <div class="grade-category">
+          <div class="grade-title" style="color: red">1등급 개인정보</div>
+          <ul class="grade-privacy-item-list">
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="passportNumber" />여권
+                번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="driverLicenseNumber" />운전면허
+                번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="creditCardNumber" />신용카드
+                번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="cardPassword" />카드
+                비밀번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="accountNumber" />계좌 번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="locationInformation" />위치
+                정보</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="ipInformation" />IP 정보</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2등급 개인정보 -->
+        <div class="grade-category">
+          <div class="grade-title" style="color: orange">2등급 개인정보</div>
+          <ul class="grade-privacy-item-list">
+            <li class="privacy-item">
+              <label><input type="checkbox" value="name" />이름</label>
+            </li>
+            <li class="privacy-item">
+              <label><input type="checkbox" value="address" />주소</label>
+            </li>
+            <li class="privacy-item">
+              <label
+                ><input type="checkbox" value="phoneNumber" />휴대폰 번호</label
+              >
+            </li>
+            <li class="privacy-item">
+              <label><input type="checkbox" value="email" />이메일</label>
+            </li>
+            <li class="privacy-item">
+              <label><input type="checkbox" value="gender" />성별</label>
+            </li>
+            <li class="privacy-item">
+              <label><input type="checkbox" value="military" />병역</label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3등급 개인정보 -->
+        <div class="grade-category">
+          <div class="grade-title" style="color: green">3등급 개인정보</div>
+          <ul class="grade-privacy-item-list">
+            <li class="privacy-item">
+              <label
+                ><input
+                  type="checkbox"
+                  value="additionalInformation"
+                />기타</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

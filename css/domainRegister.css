@@ -1,0 +1,75 @@
+.tab-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(24, 24, 24);
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(24, 24, 24);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.domain-register-part {
+  display: flex;
+  margin: 5px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #f2f2f2;
+}
+
+#domainInput {
+  height: 40px; /* 높이 설정 */
+  background-color: rgb(240, 240, 240); /* 배경 색 설정 */
+  border: 1px solid rgb(247, 247, 248); /* 경계선 색 설정 */
+  border-radius: 10px; /* 모서리 각 둥글게 설정 */
+  width: 100%;
+  box-sizing: border-box; /* 패딩과 경계선의 크기를 포함 */
+  flex: 1;
+  font-size: 15px;
+  padding: 4px; /* 내부 여백 설정 */
+  margin-right: 5px;
+}
+
+/*checkbox 배치*/
+.privacy-item-list {
+  margin-top: 10px;
+}
+
+.grade-category {
+  display: inline-block;
+}
+
+.grade-title {
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.grade-privacy-item-list {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.privacy-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+
+#content button {
+  background-color: rgb(25, 215, 75);
+  color: rgb(20, 20, 20);
+  font-weight: 600;
+  border: 1px solid rgb(247, 247, 248);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#registerPrivacyListButton {
+  height: 30px;
+}

@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "P-GRAB (AdCheck-Free)",
+  "version": "1.1.0",
+  "description": "회원가입시 선택적인 개인정보 제공 체크박스를 비활성화합니다. 또한, 사용자의 개인정보관리를 제공합니다.",
+  "permissions": ["activeTab", "storage", "tabs"],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "images/logo/icon-16.png",
+      "48": "images/logo/icon-48.png",
+      "128": "images/logo/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/logo/icon-16.png",
+    "48": "images/logo/icon-48.png",
+    "128": "images/logo/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*join*",
+        "*://*/*signup*",
+        "*://*/*regist*",
+        "*://*/*Join*",
+        "*://*/*Signup*",
+        "*://*/*Regist*",
+        "*://*/*sign-up*",
+        "*://*/*Sign-up*",
+        "*://*/*sign-Up*",
+        "*://*/*Sign-Up*",
+        "*://*/*SECKDPWEB/terms*",
+        "*://*/*trmsForm*"
+      ],
+      "js": [
+        "js/IDNameBasedBlock.js",
+        "js/TextBasedBlock.js",
+        "js/generalFunction.js",
+        "js/content.js"
+      ]
+    }
+  ]
+}

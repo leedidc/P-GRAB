@@ -1,0 +1,84 @@
+body {
+  width: 350px;
+  min-height: 600px;
+  margin: 0;
+}
+
+#title {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 36px;
+  color: rgb(25, 215, 75);
+  background-color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: left;
+  border-bottom: solid 2px #f2f2f2;
+  margin: 0;
+  padding-left: 10px;
+}
+
+#title img {
+  margin-left: 0px;
+  width: 24px;
+  height: 24px;
+}
+
+#content {
+  margin-top: 46px;
+  margin-bottom: 82px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+#navigation-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px #f2f2f2;
+}
+
+#navigation-bar button {
+  height: 60px;
+  border-style: none;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex: 1; /* 각 버튼의 너비를 동일하게 설정 */
+}
+
+/* 포인터를 버튼에 갖다댈 시 스타일 */
+#navigation-bar button:hover {
+  background-color: rgb(200, 200, 200);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 활성화된 페이지에 대응하는 버튼에 border-top 표시 */
+#navigation-bar button.active {
+  border-top: solid 2px #000000;
+}
+
+#navigation-bar img {
+  width: 56px;
+  height: 56px;
+}
+
+/* copyright 지정 */
+#copyright {
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  color: gray;
+  background-color: rgb(240, 240, 240);
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
